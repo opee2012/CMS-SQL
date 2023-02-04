@@ -1,0 +1,33 @@
+26 SQL Statements IN THIS ORDER see the example submission below, submitting anything out of order will prevent me from grading you properly.
+
+    3 Create Table statements - 1 for each table User, Post, and Comment
+        Consider data types for each column (attribute)
+        Consider options available for each column (nulls/defaults) 
+        Consider entity integrity constraints (PKs) and referential integrity constraints (FKs)
+        Pick enforcement measures for violations of referential integrity for each and every referential integrity constraint.  Remember that this can be done differently for updates and deletions.
+        Consider the order these tables need to be created!
+        Don't forget about UNIQUE KEYS!  Any key that is not a PRIMARY KEY is UNIQUE 
+    Insert 1 User  - Insert user 1
+    Insert 1 User - Insert user 2
+    Insert 1 User - Insert user 3
+    Insert 1 User - Insert user 4
+    Insert 1 Post - 1st User makes a 1st Post
+    Insert 1 Post - 2nd User makes a 2nd Post
+    Insert 1 Comment - The 3rd user should  make a comment on the 2nd post that was made (User 2 should have made this post).
+    Insert 1 Comment - The 4th user should make a comment on the 2nd post that was made (Again User 2 created that post).
+    Insert 1 Comment - The 4th user should make a comment on the 1st post.
+    1 Select - Select all data from the User table;
+    1 Select - Select all the data from the Post table;
+    1 Select - Select all the data from the Comments Table;
+    1 Select giving me all the posts creation dates, post titles, contents, and the authors first name, the authors last name, and the authors email address for each post.
+    1 Select giving me just the the 2nd posts creation date, title, content, and the authors first name, the authors last name, and the authors email address for that post as well as any comments content and created date made on the post with the comments authors first, last name, and email address... Obviously there should be two comments so expect two rows to be returned with this query.
+    1 Delete removing the 3rd user. - Hint: this should not fail
+    1 Select - Select everything from Comment
+    1 Delete removing the 2nd post.- Hint: this should not fail
+    1 Select - Select everything from Comment
+    1 Delete removing the 1st user.- Hint: this should not fail
+    1 Select - Select everything from User
+    1 Select -  Select everything from Comment
+    1 Select - Select everything from Post
+    1 Drop -  DROP all of the three tables at the same time - You need to consider order of dropping to get it to work, think about the referential constraints.
+
